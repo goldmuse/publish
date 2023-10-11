@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+*{box-sizing:border-box; -webkit-box-sizing:border-box; -ms-box-sizing:border-box;-moz-box-sizing:border-box;}
+
+/* header */
+header{position: relative; width:100%; height:400px}
+header .gnb .headwrap{position:relative; width:1240px; height:100px; margin:0 auto}
+.gnb{position:fixed; background: rgba(255,255,255,.2); top: 0; left: 0; z-index: 25; border-bottom: 1px solid rgba(255,255,255,.5); transition: all 0.5s ease-out; width: 100%; height:100px}
+.gnb:hover{ background: rgba(255,255,255, 1); border-bottom: 1px solid #d3d3d3;}
+.gnb .headwrap h1{position: absolute; left:0; top: 38px; width: 174px; height:24px}
+.gnb .headwrap h1 a { display: block; width:100%; height:100%; background: url(../images/common/logo.png) no-repeat 0 0;background-size: contain; font-size: 0; text-indent: -9999rem}
+
+.gnb .headwrap ul{position:absolute; right:0; top: 35px; width:auto; height: 30px}
+.gnb .headwrap ul{list-style: none;}
+.gnb .headwrap ul li{float:left; margin-left: 72px}
+.gnb .headwrap ul li a{display: inline-block; height: 30px; font-size: 24px; text-align: right; font-weight: 500; color:#111; cursor: pointer;}
+.gnb .headwrap ul li.on a,.gnb .headwrap ul li a:hover{color:#D71820; font-weight: 700;}
+
+header .sub_visual{position: relative; width:100%; height:400px}
+header .sub_visual .subText{position: absolute; width:100%; top: 171px; text-align: center;} 
+header .sub_visual .subText h2{font-size:58px; color:#111}
+header .sub_visual .subText p{font-size:24px; color:#111}
+
+header .sub_visual.svisual1{background: url(../images/common/sub_visual1.png) no-repeat 50% 0; background-size: 100% 100%;}
+header .sub_visual.svisual2{background: url(../images/common/sub_visual2.png) no-repeat 50% 0; background-size: 100% 100%;}
+header .sub_visual.svisual3{background: url(../images/common/sub_visual3.png) no-repeat 50% 0; background-size: 100% 100%;}
+
+.container{position: relative; width:100%; min-height:600px;}
+.container .content_wrap{position: relative; width:1240px; min-height: 600px; margin: 0 auto}
+
+
+/* footer */
+.footer{position: relative; width: 100%; height: 100px; margin-top: 85px; background: #fff;}
+.footer .footwrap{position:relative; width:1240px; height: 100px; margin: 0 auto}
+.footer .foot_logo{position: absolute; width:205px; height:18px; left: 0; top:30px; background: url(../images/common/footer_logo.png) no-repeat 0 0; text-indent: -99999rem;}
+.footer .footwrap .foot_info{position: absolute; top:30px; right:0; color:#666; text-align: right; font-size: 12px;}
+
+
+/* main */
+.main_visual{position: relative; width: 100%; height: 680px; background: url(../images/common/main_visual.png) no-repeat; background-size: 100% 100%;}
+.mainvisual_wrap{position: relative; width: 1240px; height: 400px; margin: 0 auto}
+.mainText{position: absolute; width: 1240px; height: 400px; margin: 0 auto; top: 226px; left: 0; }
+.mainText p.txt{font-size:24px; color:#111}
+
+.ceomass{position: absolute; right: -54px; top: 189px; width:220px; height: 220px; text-align: center; border-radius: 50%; background-color: #fff; padding: 37px; box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26); -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26);}
+.ceomass.mike{background: #fff url(../images/common/ico_main_new.png) no-repeat 50% 39px} 
+.ceomass .title{font-size: 26px; text-align: center; margin-top: 5px; margin-bottom: 14px; letter-spacing: -2px; font-weight: 700;}
+.ceomass .txt_red{color:#D71820}
+.ceomass .btn_close{position:absolute; right: -47px; bottom: 0; width: 30px; height: 30px; background: url(../images/common/ico_close.png) no-repeat -3px 0; background-size: 100% 100%;}
+
+.ceomass:hover{animation: scalejump 1s ease-out infinite}
+
+@keyframes gelatine {
+  from, to { transform: scale(1, 1); }
+  25% { transform: scale(0.9, 1.1); }
+  50% { transform: scale(1.1, 0.9); }
+  75% { transform: scale(0.95, 1.05); }
+}
+
+@keyframes scalejump {
+  0% {transform: scale(1);}
+  40% {transform: scale(1.08); }
+  55% {transform: scale(1.02);}
+  100% {transform: scale(1);}
+}
+
+
+.maauto{margin: 0 auto;}
+.btn_lnkks{width:auto; height: 16px; font-size: 14px; color:#666; font-weight: 700; padding-right: 22px; background: url(../images/common/ico_arrow.png) no-repeat 98% 0;}
+
+.container.main{margin-top:164px!important; min-height: 370px!important;}
+.main .content_wrap{ min-height: 370px!important;}
+
+.mainconents{width:1240px; clear:both; height: 370px; margin: 0 auto; padding: 30px; border-radius: 30px 30px 12px 12px; background-color: #fff; box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26); -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26);}
+.mainconents > div { float:left; width: 387px; height: 310px; margin-right: 24px; border-right: 1px solid #d3d3d3;}
+.mainconents .m1{position: relative;}
+.mainconents .m1 .subject{ text-align:center; font-size: 34px; font-weight: 700; color: #111;}
+.mainconents .m1 .desc{text-align: center; margin-top: 15px; font-size: 16px; font-weight: 700; color:#111}
+.mainconents .m1 .more{text-align: right; margin-top: 14px; padding-right: 20px}
+.mainconents .m1 ul{list-style: none; clear: both; margin-top: 30px}
+.mainconents .m1 ul li{float: left; width:174px; margin-right: 12px;}
+.mainconents .m1 ul li:last-child{margin-right: 0;}
+.mainconents .m1 ul li .imgarea{width: 174px; height: 94px; border-radius: 4px;}
+.mainconents .m1 ul li .title{text-align: center; margin-top: 11px; height: 32px; overflow: hidden; font-size:12px; color: #333}
+.mainconents .m1 ul li .date{text-align: center; margin-top: 8px; font-size:10px; color:#666}
+
+.mainconents .m2{position: relative;}
+.mainconents .m2 .subject{ text-align:center; font-size: 34px; font-weight: 700; color: #111;}
+.mainconents .m2 .desc{text-align: center; margin-top: 15px; font-size: 16px; font-weight: 700; color:#111}
+.mainconents .m2 .more{text-align: right; margin-top: 14px; padding-right: 20px}
+.mainconents .m2 ul{list-style: none; clear: both; margin-top: 30px}
+.mainconents .m2 ul li{float: left; width:174px; margin-right: 12px;}
+.mainconents .m2 ul li:last-child{margin-right: 0;}
+.mainconents .m2 ul li .imgarea{width: 174px; height: 94px; border-radius: 4px;}
+.mainconents .m2 ul li .title{text-align: center; margin-top: 11px; height: 32px; overflow: hidden; font-size:12px; color: #333}
+.mainconents .m2 ul li .date{text-align: center; margin-top: 8px; font-size:10px; color:#666}
+
+.mainconents .m3{position: relative; width:358px; margin-right: 0; border-right: 0}
+.mainconents .m3 .subject{text-align:center; font-size: 34px; font-weight: 700; color: #111;}
+.mainconents .m3 .day{text-align:center; font-size: 16px; font-weight: 700; background-color: #333; margin: 16px auto 11px; color: #fff; width: 140px; height: 38px; line-height: 38px; border-radius: 19px;}
+.mainconents .m3 ul.sbg{width: 356px; height: 160px; position: relative; padding-top: 28px; background: url(../images/content/m_schedular_bg.png) no-repeat 0 0; background-size: 100% 100%;}
+.mainconents .m3 ul.sbg li{position: relative; width:180px; margin-left: 20px; margin-bottom:3px; padding-left: 13px; height: 42px; overflow: hidden; line-height: 1.1;}
+.mainconents .m3 ul.sbg li::before{content:""; position:absolute; top: 7px; left: 0; width: 7px; height: 7px; background:url(../images/common/ico_dot.png) no-repeat 0 0; background-size: contain }
+.mainconents .m3 ul.sbg li a{color:#333; font-size: 14px;}
+.mainconents .m3 ul.sbg li a:hover{text-decoration: underline;}
+.mainconents .m3 .more{text-align: right; margin-top: 14px; padding-right: 20px; position: absolute; bottom: 60px; left: 31px}
+
+/* 알럿팝업 */
+.popupwrap{width: 540px; height: auto; margin:0 auto; padding: 30px 37px; border-radius: 12px; box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26); -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26);}
+.popupwrap .icon{width: 54px; height: 52px; background-size: 11px 36px; vertical-align: middle;}
+.popupwrap h2{font-size:26px; margin-bottom: 20px;}
+.popupwrap .txtarea{padding-left: 74px; font-size: 20px; margin-bottom: 30px;}
+
+/*레이어 팝업 : 메인*/
+.layerPopup{display: none; position: absolute; top: 50%; left:50%; z-index: 9999; width: 960px; height: 778px; overflow: hidden; margin-left: -480px; margin-top: -389px; border-radius: 18px; background-color: #fff; box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26); -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26);}
+.layerPopup.on{display: block;}
+.layerPopup header{height: 65px; clear:both}
+.layerPopup header h2{width: 50%; font-size: 20px; padding: 22px 0 0 30px; float: left;}
+.layerPopup header .btn_close{position:absolute; right: 30px; top: 20px; width: 24px; height: 24px; border:1px solid #d3d3d3; border-radius: 8px; font-size:0; text-indent: -99999px; background: url(../images/common/ico_close_popup.png) no-repeat 6px 6.4px; background-size: inherit;}
+.layerPopup header .btn_close:hover, .layerPopup header .btn_close:focus, .layerPopup header .btn_close:active{box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26); -webkit-box-shadow: 0px 6px 12px 0px rgba(0,0,0,.26);}
+.layerPopup .content{height: 645px; background-color: #f8f8f8; overflow-y: scroll; padding: 16px;}
+.layerPopup .content .list_view{box-shadow: none; -webkit-box-shadow:none; background-color: #F8F8F8;}
+.layerPopup footer{height: 70px; background-color: #fff; padding-top:14px;}
+.layerPopup footer .inputarea { float: left; width: 50%; margin-left:44px;}
+.layerPopup footer input[type="checkbox"]{display: none;}
+.layerPopup footer input[type="checkbox"]:after{content:"선택됨"; font-size: 0; color: transparent}
+.layerPopup footer input[type="checkbox"]+label{display: inline-block; width:auto; background: #fff; color:#111; height: 38px; line-height: 38px;}
+.layerPopup footer input[type="checkbox"]+label span{display: inline-block; width: 16px; height: 16px; margin: -2px 3px 0 0; vertical-align: middle; background:url(../images/common/ico_unchecked2.png) no-repeat 0 50%; background-size: 100%; cursor: pointer; } 
+.layerPopup footer input[type="checkbox"]:checked + label span {background:url(../images/common/ico_checked2.png) no-repeat left center; background-size:100%}
+.layerPopup footer input[type="checkbox"]:checked + label{color:#111; background:#fff;}
+.layerPopup footer .btnArea{float:left; width:41%; text-align: right;}
+.layerPopup footer .btnArea button{height: 40px;font-size:16px; line-height: 40px; padding: 0 27px}
